@@ -5,19 +5,32 @@
     <title>Chargement en cours...</title>
     <style>
         body {
-            background-color: #000;
-            color: #fff;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://tenor.com/fr/view/lacrim-lacrim-kanun-gif-23785655'); /* Ton GIF ici */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
             font-family: Arial, sans-serif;
             text-align: center;
-            padding-top: 20%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: brightness(0.8);
         }
 
         h1 {
-            font-size: 40px;
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px black;
         }
 
         p {
-            font-size: 20px;
+            font-size: 24px;
+            text-shadow: 2px 2px 6px black;
         }
     </style>
 </head>
@@ -25,14 +38,13 @@
     <h1>Bienvenue sur le serveur !</h1>
     <p>Chargement en cours... Prépare-toi à rejoindre l'aventure.</p>
 
-    <!-- MUSIQUE -->
     <audio id="bg-music" autoplay loop>
-        <source src="https://www.dropbox.com/scl/fi/ux26rd50kbtflhfxpzj5i/On-flirte.mp3?rlkey=pburh6wgkkrei42ikcvp1bst4&st=1pgw99xl&dl=0" type="audio/mpeg">
+        <source src="https://www.dropbox.com/scl/fi/ux26rd50kbtflhfxpzj5i/On-flirte.mp3?rlkey=pburh6wgkkrei42ikcvp1bst4&st=cishpl5e&dl=0" type="audio/mpeg">
         Ton navigateur ne supporte pas l'audio HTML5.
     </audio>
 
     <script>
-        document.getElementById("bg-music").volume = 0.5; // Volume à 50%
+        document.getElementById("bg-music").volume = 0.5;
     </script>
 </body>
 </html>
